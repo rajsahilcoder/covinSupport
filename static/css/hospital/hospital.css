@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Cardo', serif;
+    text-decoration: none;
+    /* min-width:900px; */
+    background-image: linear-gradient(to right, #1f0213, #29051e, #33092a, #420c41, #440f4c, #551e63, #471958, #592c72, #723c8a, #472752, #8d5a9b, #a684ad);
+    }
+/* slider starts here */
+
+
+
+
+/* Slider-container */
+#slider{
+  width:100%;
+  height:500px;
+  position:relative;
+  overflow:hidden;
+  margin: 25px 25px 90px 25px ;
+  
+ 
+}
+@keyframes load{
+  from{left:-100%;}
+  to{left:0;}
+}
+.slides{
+  width:400%;
+  height:100%;
+  position:relative;
+  -webkit-animation:slide 30s infinite;
+  -moz-animation:slide 30s infinite;
+  animation:slide 30s infinite;
+}
+.slider{
+  width:25%;
+  height:100%;
+  float:left;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+}
+
+.image{
+  width:100%;
+  height:100%;
+}
+.image img{
+  width:100%;
+  height:auto;
+}
+
+/* Legend */
+.legend{
+  border:500px solid transparent;
+  border-left:800px solid rgba(52, 73, 94, .7);
+  border-bottom:0;
+  position:absolute;
+  bottom:0;
+}
+
+/* Contents */
+.content{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+}
+.content-txt{
+  width:400px;
+  height:150px;
+  float:left;
+  position:relative;
+  top:300px;
+  -webkit-animation:content-s 7.5s infinite;
+  -moz-animation:content-s 7.5s infinite;
+  animation:content-s 7.5s infinite;
+}
+.content-txt h1{
+  font-family:Arial;
+  text-transform:uppercase;
+  font-size:24px;
+  color:rgb(219, 165, 15);
+  text-align:left;
+  margin-left:30px;
+  padding-bottom:10px;
+}
+.content-txt h2{
+  font-family:arial;
+  font-weight:normal;
+  font-size:14px;
+  font-style:italic;
+  color:#fff;
+  text-align:left;
+  margin-left:30px;
+}
+
+
+/* Animation */
+@-webkit-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+@-moz-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+@keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+
+@-webkit-keyframes content-s{
+  0%{left:-420px;}
+  10%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+@-moz-keyframes content-s{
+  0%{left:-420px;}
+  10%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+@keyframes content-s{
+  0%{left:-420px;}
+  10%{left:20px;}
+  15%{left:0px;}
+  30%{left:0px;}
+  40%{left:0px;}
+  50%{left:0px;}
+  60%{left:0px;}
+  70%{left:0;}
+  80%{left:-420px;}
+  90%{left:-420px;}
+  100%{left:-420px;}
+}
+
+@-webkit-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
+
+@-moz-keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
+
+@keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:15px;
+  }
+  46%{
+    margin-left:15px;
+  }
+  50%{
+    margin-left:30px;
+  }
+  71%{
+    margin-left:30px;
+  }
+  75%{
+    margin-left:45px;
+  }
+  96%{
+    margin-left:45px;
+  }
+}
+
+
+
+
+/* slider ends here */
+/* container for card  */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* image on card */
+.img{
+    
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 12rem;
+    height: 12rem;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    
+    
+}
+img{
+    display: block;
+    border-radius: 50%;
+}
+/* name of hospital */
+.name{
+
+    position: absolute;
+    top:180%;
+    left: 50%;
+    text-align: center;
+    font-size: 2rem;
+    transform:translate(-50%,-50%) ;
+}
+a{
+    color: white;
+}
+.details{
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    font-size:1.2rem ;
+    word-wrap: break-word;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+
+    
+}
+.card {
+    perspective:150rem;
+    position :relative;
+    height: 38rem;
+    width: 400px;
+    margin: 2rem;
+    box-shadow:none;
+    background: none;
+    
+
+}
+.cardside{
+    height: 28rem;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    color:white;
+}
+.cardside.back {
+    transform: rotateY(-180deg);
+    background-color: #4158D0;
+    background-image: linear-gradient(160deg,
+        rgb(219, 165, 15) 0%,
+        #000 46%,
+        #000 100%);
+
+}
+.cardside.front {
+    background-color:#0093E9;
+    background-image: linear-gradient(160deg,
+    #000 0%,
+    #80D0C7 100%);
+
+}
+.card:hover .cardside.front{
+    transform: rotateY(180deg);
+}
+.card:hover .cardside.back{
+    transform: rotateY(0deg);
+}
+@media only screen and (max-width: 800px)
+{
+    .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+/* section starts here */
+.titletag{
+    color: rgb(219, 165, 15);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.newsbox{
+    
+  
+    width: 100%;
+    padding-bottom: 40px;
+}
+.news p{
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    margin: 10px auto;
+    padding: 28px;
+    width: 87%;
+    
+
+
+}
+.news a{
+    
+        text-decoration: none;
+        color: white;
+        
+        border-radius:30px;
+        padding: 0 5px;
+        margin-left: 5px;
+        background-color: #80D0C7;
+    
+}
+/* blood centre */
+.container a{
+  text-decoration: none;
+}

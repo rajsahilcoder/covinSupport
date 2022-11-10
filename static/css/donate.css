@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#grad {
+    /* background: #5f2c82;
+/* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, #49a09d, #5f2c82); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left, #49a09d, #5f2c82); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, #200615, #2a0a20, #350a2c, #3d0c3b, #440f4c, #461452, #471958, #481e5e, #482358, #472752, #462c4d, #443048);
+    /* padding: 0;
+margin: 0; */
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    margin: 0px 0px 1px 1px;
+    border: 2px solid white;
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/* hjgsdu, */
+/* section {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+margin-left: 0%;
+background: url(https://www.istockphoto.com/photo/watercolor-deep-violet-background-texture-hand-painted-vintage-watercolour-grape-gm1286886484-383255281?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpurple&utm_term=purple%3A%3A%3A);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+section:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 300px;
+height: 100%;
+background: url();
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+box-shadow: 20px 0 100px rgba(0, 0, 0, 0.2), -20px 0 100px rgba(0, 0, 0, 0.2);
+background-size: 110%;
+animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+0%,
+100% {
+left: 0px;
+}
+50% {
+left: calc(100% - 300px);
+}
+}
+
+
+*/
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #d56bdf 0%, #a15ee9 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 90px;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: -850px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+/* hjfsd.kg */
+
+.img {
+    opacity: 0.6;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    border: 2px solid white;
+    background-color: rgb(42, 8, 49);
+    height: 50px;
+    margin: 10px 0;
+}
+
+.text1 {
+    position: absolute;
+    margin-top: 7%;
+    text-align: center;
+    color: rgb(243, 245, 237);
+    opacity: 1;
+    font-size: 20px;
+}
+
+.text3 {
+    text-align: center;
+    color: rgb(234, 236, 226);
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.container1 {
+    height: 25rem;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px;
+    padding: 10px 0;
+}
+/* .innerbox {
+display: flex;
+justify-content: space-evenly;
+} */
+
+.card {
+    display: block;
+    border: 2px solid black;
+    height: fit-content;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(243, 245, 237);
+    font-size: 20px;
+}
+
+.work {
+    margin: 10px;
+}
+/* .cent {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+    padding: 30px 60px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.cent:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cent span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: anim1 2s linear infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translatex(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.cent span:nth-child(2) {
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: anim2 2s linear infinite;
+    animation-delay: 1;
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translatey(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.cent span:nth-child(3) {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 2px;
+    bottom: 0px;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation: anim3 2s linear infinite;
+}
+
+@keyframes anim3 {
+    0% {
+        transform: translatex(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cent span:nth-child(4) {
+    position: absolute;
+    width: 2px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: anim4 2s linear infinite;
+    animation-delay: 1;
+}
+
+@keyframes anim4 {
+    0% {
+        transform: translatey(100%);
+    }
+    100% {
+        transform: translatey(-100%);
+    }
+}
+
+.cent:hover {
+    background: #EEEB18;
+    box-shadow: 0px 25px 50px #EEEB18;
+} */
+.btnn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 15px auto;
+    height: 5rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.button a:hover {
+    background-color: rgb(156, 114, 156);
+    color: black;
+}

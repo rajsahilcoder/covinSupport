@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction</title>
+    <link rel="stylesheet" href="/css/transaction.css">
+</head>
+
+<body>
+    <div class="page">
+        <h1>DONATE HERE</h1>
+        <div class="form">
+            <div class="formm">
+                <label for="fname"><h2>First name:</h2></label>
+                <input type="text" id="fname" size="25" name="fname" placeholder="First Name">
+                <label for="lname"><h2>Last name:</h2></label>
+                <input type="text" id="lname" size="25" name="lname" placeholder="Last Name">
+                <label for="phone"><h2>Enter your phone number:</h2></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999">
+                <label for="email"><h2>Enter your email:</h2></label>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                <label for="quantity"><h2>Enter your amount:</h2></label>
+                <input type="number" name="quantity" id="quantity"><br>
+                <button onclick="donate()"><h2>Donate</h2></button>
+                <div class="info">
+                    <p class="headline">YOUR DONATION IS GREATLY APPRECIATTED.</p>
+                    <div class="infopage">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function donate() {
+            alert("Thank you for your donation.");
+        }
+    </script>
+</body>
+
+</html>

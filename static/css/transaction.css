@@ -1,0 +1,59 @@
+.page {
+    width: 100%;
+}
+
+.page h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, #1f0213, #29051e, #33092a, #420c41, #440f4c, #551e63, #471958, #592c72, #723c8a, #472752, #8d5a9b, #a684ad);
+}
+
+.form {
+    color: rgb(53, 48, 48);
+    width: 60%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    font-size: 15px;
+}
+
+.headline {
+    color: #555;
+    font-size: 3rem;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0 5pxpx;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formm {
+    margin: auto;
+    width: 80%;
+    background-color: #f2f2f2;
+}

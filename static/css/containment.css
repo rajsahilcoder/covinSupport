@@ -1,0 +1,81 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #1f0213, #29051e, #33092a, #420c41, #440f4c, #551e63, #471958, #592c72, #723c8a, #472752, #8d5a9b, #a684ad);
+  }
+  
+  .card{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+    background-color: gainsboro;
+  }
+  
+  img{
+    width: 100%;
+    transition: all .2s linear;
+  }
+  
+  .card-content{
+    position: absolute;
+    bottom: 3rem;
+    right: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+    transition: all .2s linear;
+  }
+  
+  a{
+    text-decoration: none;
+    
+  }
+  
+  .card-category{
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin: 15px;
+    color: #000;
+  }
+  
+  i{
+    margin-left: 5px;
+  }
+  
+  .card:hover{
+      box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22)
+  }
+  
+  .card:hover .card-content{
+    right: 0; 
+  }
+  
+  .card:hover img{
+    transform: scale(1.1);
+  }
+  .head{
+      border: 2px solid black;
+      height: 15%;
+      width: 100%;
+      display: flex;
+      margin-top: 0%;
+      justify-content: center;
+      text-align: center;
+      font-size: 40px;
+      font-family: sans-serif;
+      font-weight: 600;
+      color: rgb(92, 83, 83);
+      background-color: ghostwhite;
+
+  }
+  
+  
